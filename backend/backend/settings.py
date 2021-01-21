@@ -125,7 +125,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 #whitelist localhost:3000(react) to connect to frontend
-CORS_ALLOWED_ORIGIN = [
-    "http://localhost:3000"
+CORS_ALLOW_ORIGIN = [
+    "http://localhost:3000/"
 ]
